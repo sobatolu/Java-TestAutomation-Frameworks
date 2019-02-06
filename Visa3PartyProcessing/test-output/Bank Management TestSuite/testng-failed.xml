@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Bank Management TestSuite]">
+  <parameter name="userRole" value="BankUser"/>
+  <test name="Base2 Transaction Search(failed)">
+    <classes>
+      <class name="com.interswitchgroup.V3P.BaseTests.UserLogin">
+        <methods>
+          <include name="StartTest"/>
+          <include name="StartTest"/>
+          <include name="NavigateToApp"/>
+          <include name="SignIn"/>
+          <include name="SuiteInit"/>
+        </methods>
+      </class> <!-- com.interswitchgroup.V3P.BaseTests.UserLogin -->
+      <class name="com.interswitchgroup.V3P.BankMgt.Base2TransactionSearch">
+        <methods>
+          <include name="SearchbyNoCriteria"/>
+          <include name="SearchbyPan"/>
+          <include name="SearchbyDate"/>
+          <include name="SearchbyRaisedBy"/>
+          <include name="SearchbyTransStatus"/>
+          <include name="SearchbylastPan"/>
+          <include name="SearchbyAuthCode"/>
+          <include name="SearchbyfirstPan"/>
+          <include name="SearchbyTerminalId"/>
+        </methods>
+      </class> <!-- com.interswitchgroup.V3P.BankMgt.Base2TransactionSearch -->
+      <class name="com.interswitchgroup.V3P.BaseTests.UserLogout">
+        <methods>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- com.interswitchgroup.V3P.BaseTests.UserLogout -->
+    </classes>
+  </test> <!-- Base2 Transaction Search(failed) -->
+  <test name="SMS Transaction Search(failed)">
+    <classes>
+      <class name="com.interswitchgroup.V3P.BaseTests.UserLogin">
+        <methods>
+          <include name="StartTest"/>
+          <include name="StartTest"/>
+          <include name="NavigateToApp"/>
+          <include name="SignIn"/>
+          <include name="SuiteInit"/>
+        </methods>
+      </class> <!-- com.interswitchgroup.V3P.BaseTests.UserLogin -->
+      <class name="com.interswitchgroup.V3P.BaseTests.UserLogout">
+        <methods>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- com.interswitchgroup.V3P.BaseTests.UserLogout -->
+      <class name="com.interswitchgroup.V3P.BankMgt.smsTransactionSearch">
+        <methods>
+          <include name="SearchbyCPDDate"/>
+          <include name="SearchbyTerminalId"/>
+          <include name="SearchbyTransDecription"/>
+          <include name="SearchbyTransDate"/>
+          <include name="SearchbyRaisedBy"/>
+          <include name="SearchbyRequestMsgType"/>
+          <include name="SearchbyFirstPan"/>
+          <include name="SearchbyLastPan"/>
+          <include name="SearchbyPan"/>
+          <include name="SearchbyNoCriteria"/>
+        </methods>
+      </class> <!-- com.interswitchgroup.V3P.BankMgt.smsTransactionSearch -->
+    </classes>
+  </test> <!-- SMS Transaction Search(failed) -->
+</suite> <!-- Failed suite [Bank Management TestSuite] -->

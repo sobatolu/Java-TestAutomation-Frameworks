@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name = "Switch Management TestSuite" parallel = "false">
+   <parameter name="userRole" value="SwitchUser" />
+  
+	<test name = "Processed File Monitoring">
+        <classes>
+	        <class name = "com.interswitchgroup.V3P.BaseTests.UserLogin"></class>
+			<class name = "com.interswitchgroup.V3P.SwitchMgt.FileMonitoring"></class> 
+	        <class name = "com.interswitchgroup.V3P.BaseTests.UserLogout"></class>  
+	    </classes>
+	 </test> 
+	 
+      <test name = "V3P Settings">
+        <classes>
+	        <class name = "com.interswitchgroup.V3P.BaseTests.UserLogin"></class>
+			<class name = "com.interswitchgroup.V3P.SwitchMgt.DomainSettings"></class>
+	        <class name = "com.interswitchgroup.V3P.BaseTests.UserLogout"></class> 
+	    </classes>
+	 </test> 
+	 
+</suite>

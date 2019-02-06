@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name = "Bank Management TestSuite" parallel = "false">
+    <parameter name="userRole" value="BankUser" />
+    
+    <test name = "Base2 Transaction Search">
+       
+	    <classes>
+	        <class name = "com.interswitchgroup.V3P.BaseTests.UserLogin"></class>
+	        <class name = "com.interswitchgroup.V3P.BankMgt.Base2TransactionSearch"></class>
+	        <class name = "com.interswitchgroup.V3P.BaseTests.UserLogout"></class>
+	    </classes> 
+	 </test> 
+	 
+    <test name = "SMS Transaction Search">
+       <classes>
+	        <class name = "com.interswitchgroup.V3P.BaseTests.UserLogin"></class>
+			<class name = "com.interswitchgroup.V3P.BankMgt.smsTransactionSearch"></class> 
+	        <class name = "com.interswitchgroup.V3P.BaseTests.UserLogout"></class>  
+	    </classes>
+	 </test>
+	 
+</suite>

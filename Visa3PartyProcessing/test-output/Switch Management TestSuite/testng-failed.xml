@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Switch Management TestSuite]">
+  <parameter name="userRole" value="SwitchUser"/>
+  <test name="Processed File Monitoring(failed)">
+    <classes>
+      <class name="com.interswitchgroup.V3P.BaseTests.UserLogin">
+        <methods>
+          <include name="StartTest"/>
+          <include name="StartTest"/>
+          <include name="NavigateToApp"/>
+          <include name="SignIn"/>
+          <include name="SuiteInit"/>
+        </methods>
+      </class> <!-- com.interswitchgroup.V3P.BaseTests.UserLogin -->
+      <class name="com.interswitchgroup.V3P.SwitchMgt.FileMonitoring">
+        <methods>
+          <include name="monitorFile"/>
+        </methods>
+      </class> <!-- com.interswitchgroup.V3P.SwitchMgt.FileMonitoring -->
+      <class name="com.interswitchgroup.V3P.BaseTests.UserLogout">
+        <methods>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- com.interswitchgroup.V3P.BaseTests.UserLogout -->
+    </classes>
+  </test> <!-- Processed File Monitoring(failed) -->
+  <test name="V3P Settings(failed)">
+    <classes>
+      <class name="com.interswitchgroup.V3P.BaseTests.UserLogin">
+        <methods>
+          <include name="StartTest"/>
+          <include name="StartTest"/>
+          <include name="NavigateToApp"/>
+          <include name="SignIn"/>
+          <include name="SuiteInit"/>
+        </methods>
+      </class> <!-- com.interswitchgroup.V3P.BaseTests.UserLogin -->
+      <class name="com.interswitchgroup.V3P.BaseTests.UserLogout">
+        <methods>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- com.interswitchgroup.V3P.BaseTests.UserLogout -->
+      <class name="com.interswitchgroup.V3P.SwitchMgt.DomainSettings">
+        <methods>
+          <include name="AddDomain"/>
+        </methods>
+      </class> <!-- com.interswitchgroup.V3P.SwitchMgt.DomainSettings -->
+    </classes>
+  </test> <!-- V3P Settings(failed) -->
+</suite> <!-- Failed suite [Switch Management TestSuite] -->
